@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Catalog — VOID
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        VOID
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">
+          home
+        </a>
+        <a href="catalog.html">
+          shop
+        </a>
+        <a href="about.html">
+          about
+        </a>
+        <a href="cart.html" data-cart-count>
+          cart
+        </a>
+      </nav>
+    </header>
+    <main class="catalog">
+      <a class="back-link" href="index.html">
+        ← Back to home
+      </a>
+      <section class="arrivals" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <h1 id="catalog-title">
+            CATALOG
+          </h1>
+          <span>
+            01 — 05
+          </span>
+        </div>
+        <div class="product-grid" data-product-grid></div>
+        <noscript>Please enable JavaScript to view the collection.</noscript>
+        <p class="demo-note">
+          Store concept · Illustrative products
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

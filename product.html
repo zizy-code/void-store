@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product — VOID</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/product.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">VOID</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">home</a>
+        <a href="catalog.html">shop</a>
+        <a href="about.html">about</a>
+        <a href="cart.html" data-cart-count>cart</a>
+      </nav>
+    </header>
+    <main class="product-page">
+      <a class="back-link" href="catalog.html">← Back to catalog</a>
+      <p class="page-message" data-product-status role="status">Loading product…</p>
+      <noscript><p class="page-message">Please enable JavaScript to view this product.</p></noscript>
+      <article class="product-detail" data-product hidden>
+        <div class="product-image"><img alt="" width="350" height="400"></div>
+        <div class="product-details">
+          <span class="eyebrow">VOID / Collection 01</span>
+          <h1></h1>
+          <p class="product-color" data-color></p>
+          <p class="product-price" data-price></p>
+          <p class="product-description" data-description></p>
+          <form>
+            <fieldset class="size-picker">
+              <legend>Select size</legend>
+              <div class="size-options" data-sizes></div>
+            </fieldset>
+            <button class="shop-button add-to-cart" type="submit">add to cart <span aria-hidden="true">↗</span></button>
+            <p class="product-feedback" data-feedback role="status" aria-live="polite"></p>
+          </form>
+          <a class="text-link" href="cart.html">View cart →</a>
+          <p class="demo-note">Store concept · Illustrative products and prices</p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

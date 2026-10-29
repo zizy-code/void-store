@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A minimal clothing store concept. Explore new arrivals.">
+    <title>
+      VOID — No rules
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        VOID
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">
+          home
+        </a>
+        <a href="catalog.html">
+          shop
+        </a>
+        <a href="about.html">
+          about
+        </a>
+        <a href="cart.html" data-cart-count>
+          cart
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <span class="eyebrow">
+          A study in individuality
+        </span>
+        <h1 id="hero-title">
+          no rules
+        </h1>
+        <a class="shop-button" href="catalog.html">
+          shop now
+          <svg class="shop-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M4 12h15m-6-6 6 6-6 6"/>
+          </svg>
+        </a>
+        <div class="hero-bottom">
+          <span>
+            Form. Texture. Attitude.
+          </span>
+          <span>
+            Explore the collection ↓
+          </span>
+        </div>
+      </section>
+      <section class="arrivals" aria-labelledby="arrivals-title">
+        <div class="section-heading">
+          <h2 id="arrivals-title">
+            NEW ARRIVALS
+          </h2>
+          <span>
+            01 — 05
+          </span>
+        </div>
+        <div class="product-grid" data-product-grid></div>
+        <noscript>Please enable JavaScript to view the collection.</noscript>
+        <p class="demo-note">
+          Store concept · Illustrative products
+        </p>
+      </section>
+    </main>
+    <footer>
+      <span>
+        VOID
+      </span>
+      <span>
+        Clothing store template
+      </span>
+    </footer>
+  </body>
+</html>

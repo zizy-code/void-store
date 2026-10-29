@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart — VOID</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/cart-page.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">VOID</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">home</a>
+        <a href="catalog.html">shop</a>
+        <a href="about.html">about</a>
+        <a href="cart.html" data-cart-count aria-current="page">cart</a>
+      </nav>
+    </header>
+    <main class="cart-page">
+      <a class="back-link" href="catalog.html">← Back to catalog</a>
+      <section class="cart-content" aria-labelledby="cart-title">
+        <h1 id="cart-title">YOUR CART</h1>
+        <noscript>Please enable JavaScript to view your cart.</noscript>
+        <div data-cart-items></div>
+        <p class="cart-total" data-cart-total></p>
+        <p role="status" data-cart-feedback></p>
+        <p class="demo-note">Store concept · Illustrative products and prices</p>
+      </section>
+    </main>
+  </body>
+</html>
